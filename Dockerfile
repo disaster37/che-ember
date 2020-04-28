@@ -11,6 +11,7 @@ RUN sh /tmp/debian.sh
 RUN \
   ember init &&\
   npm install -g cordova &&\
+  npm install -g phantomjs@2.1.1 --unsafe-perm &&\
   npm install -g corber
 
 WORKDIR "/projects"
